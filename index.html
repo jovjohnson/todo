@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>todo list</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="stylin.css">
+	<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>got s*!# to do.</h1>
+		</div>
+
+		<input type="text" placeholder="enter task" id="newTask">
+		<input type="date" placeholder="enter date" id="dueDate">
+		<button id="addTask">add task</button>
+
+
+		<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>tasks</th>
+				<th>deadline</th>
+				<th>completed</th>
+			</tr>
+		</thead>
+		<tbody id="list">
+		</tbody>
+			<tr id="template">
+				<td class="desc"></td>
+				<td class='dueDate'></td>
+				<td>
+				<input type="checkbox">
+				</td>
+			</tr>
+		</table>
+
+	</div>
+</body>
+</html>
